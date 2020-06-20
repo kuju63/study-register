@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/normalize.css/normalize.css">
     <style>
         body {
             min-height: 100vh;
@@ -25,7 +26,80 @@
         <div id="title">LT大会参加登録</div>
     </header>
     <div id="main">
-
+        <div>
+            <div>
+                <input type="button" value="参加登録">
+                <div id="register-form">
+                    <form action="" method="post">
+                        <div>
+                            <input type="radio" name="registerType" value="0" id="register-type-viewer">
+                            <label for="register-type-viewer">発表しない人</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="registerType" value="1" id="register-type-presenter">
+                            <label for="register-type-presenter">発表する人</label>
+                        </div>
+                        <div>
+                            <input type="text" name="name">
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="">
+                        </div>
+                        <div>
+                            <input type="radio" name="fieldOfExpertise" id="field-of-expertise-me">
+                            <label for="field-of-expertise-me">ME</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="fieldOfExpertise" id="field-of-expertise-el">
+                            <label for="field-of-expertise-el">EL</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="fieldOfExpertise" id="field-of-expertise-ms">
+                            <label for="field-of-expertise-ms">MS</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="fieldOfExpertise" id="field-of-expertise-it">
+                            <label for="field-of-expertise-it">IT</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="fieldOfExpertise" id="field-of-expertise-ch">
+                            <label for="field-of-expertise-ch">CH</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="fieldOfExpertise" id="field-of-expertise-sales">
+                            <label for="field-of-expertise-sales">営業</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="fieldOfExpertise" id="field-of-expertise-other">
+                            <label for="field-of-expertise-other">その他</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>当日のタイムテーブルです。
+                <table>
+                    <thead>
+                        <tr>
+                            <th>時間</th>
+                            <th>担当者</th>
+                            <th>タイトル</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>19:00〜</td>
+                            <td>未定</td>
+                            <td>未定</td>
+                        </tr>
+                        <tr>
+                            <td>19:10〜</td>
+                            <td>未定</td>
+                            <td>未定</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
     <footer>
         Copyright ©︎ 2020 KuriharaJun
