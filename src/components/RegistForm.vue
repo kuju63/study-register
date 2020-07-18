@@ -2,14 +2,14 @@
   <div class="form-area">
     <div class="form-wrap">
       <div class="form-label">社員番号</div>
-      <div>
+      <div class="form-input">
         <input type="text" v-model="form.employeeNumber" />
       </div>
     </div>
     <div class="form-wrap">
       <div class="form-label">参加種別</div>
-      <div>
-        <div>
+      <div class="fornm-radio">
+        <div class="select-area">
           <input
             type="radio"
             name="participation"
@@ -19,7 +19,7 @@
           />
           <label for="participation-1">発表者</label>
         </div>
-        <div>
+        <div class="select-area">
           <input
             type="radio"
             name="Participation"
@@ -33,14 +33,14 @@
     </div>
     <div class="form-wrap">
       <div class="form-label">氏名</div>
-      <div>
+      <div class="form-input">
         <input type="text" v-model="form.name" />
       </div>
     </div>
     <div class="form-wrap">
       <div class="form-label">LT大会に期待すること</div>
-      <div>
-        <textarea name id cols="30" rows="10" v-model="form.expect"></textarea>
+      <div class="form-input">
+        <textarea name id cols="30" rows="3" v-model="form.expect"></textarea>
       </div>
     </div>
     <div class="form-wrap save-area">
@@ -82,7 +82,7 @@ export default class DetailComponent extends Vue {
 }
 </script>
 
-<style>
+<style scoped>
 .form-area {
   margin: 10px auto;
   width: 80%;
@@ -96,7 +96,7 @@ export default class DetailComponent extends Vue {
   grid-template-columns: 1fr 2fr;
   padding: 10px auto;
   vertical-align: middle;
-  margin: auto auto;
+  margin: 5px auto;
 }
 
 .form-label {
@@ -137,5 +137,20 @@ export default class DetailComponent extends Vue {
 .btn-clear:focus,
 .btn-clear:hover {
   background-color: #cb5c2a;
+}
+
+.form-input {
+  margin: auto;
+  width: 100%;
+  text-align: left;
+}
+
+.fornm-radio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.select-area {
+  text-align: left;
 }
 </style>
