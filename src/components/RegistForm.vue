@@ -66,19 +66,12 @@ export interface FormModel {
 
 @Component
 export default class DetailComponent extends Vue {
-  /**
-   *
-   */
-  constructor() {
-    super();
-    this.form = {
-      employeeNumber: "",
-      participationType: 2,
-      name: "",
-      expect: ""
-    };
-  }
-  @Prop() private form: FormModel;
+  form: FormModel = {
+    employeeNumber: "",
+    participationType: 2,
+    name: "",
+    expect: ""
+  };
 }
 </script>
 
