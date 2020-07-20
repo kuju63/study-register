@@ -6,5 +6,5 @@ module.exports = {
     //         path: path.resolve(__dirname, '../../dist')
     //     }
     // },
-    outputDir: path.resolve(__dirname, '../dist')
+    outputDir: path.resolve(__dirname, 'dist')
 }
